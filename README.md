@@ -4,7 +4,7 @@
 
 | Column   | Type   | Options                   |
 | -------- | ------ | ------------------------- |
-| username | string | null: false               |
+| name     | string | null: false               |
 | email    | string | null: false, unique: true |
 | password | string | null: false               |
 
@@ -16,9 +16,9 @@
 
 ## groups table
 
-| Column    | Type   | Options     |
-| --------- | ------ | ----------- |
-| groupname | string | null: false |
+| Column | Type   | Options     |
+| ------ | ------ | ----------- |
+| name   | string | null: false |
 
 ### Association
 
