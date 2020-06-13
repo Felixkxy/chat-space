@@ -17,8 +17,11 @@
       .message__text
         test
   .form
-    .form-new-message
-      .form-new-message-input-box
-        .form-new-message-input-box__text-area
-        .form-new-message-input-box__icon
-      .form-new-message-send-button
+    .form-message
+      .form-message-input-box
+        %input.form-message-input-box__text-area{placeholder: "type a message"}
+        %label{class: "form-message-input-box__icon"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "form-message-input-box__icon__hidden"}
+      .form-message-send-button
+        %input.form-message-send-button__text{type: "submit", value: "Send"}
