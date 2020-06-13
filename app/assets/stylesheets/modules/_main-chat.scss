@@ -26,11 +26,14 @@
       margin-top: 28px;
       display: flex;
       align-items: center;
-      justify-content: center;
       &__text {
         text-decoration: none;
         color: #38aef0;
         font-size: 16px;
+        height: 40px;
+        width: 72px;
+        line-height: 40px;
+        text-align: center;
       }
     }
   }
@@ -78,13 +81,14 @@
           width: calc(100vw - 495px);
           border-style: none;
           &::placeholder {
-            padding-left: 5px;
+            padding-left: 10px;
           }
         }
         &__icon {
           font-size: 1.5em;
           position: absolute;
           right: 10px;
+          cursor: pointer;
           &__hidden {
             display: none;
           }
@@ -92,7 +96,6 @@
       }
       .form-message-send-button {
         background-color: #38aef0;
-        width: 100px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -101,6 +104,9 @@
           background-color: #38aef0;
           color: #ffffff;
           border-style: none;
+          height: 50px;
+          width: 100px;
+          cursor: pointer;
         }
       }
     }
