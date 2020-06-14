@@ -1,0 +1,27 @@
+.main-chat
+  .main-header
+    .main-header-left-box
+      .main-header-left-box__group-name
+        test
+      .main-header-left-box__member-list
+        Member: masa
+    .main-header-edit-button
+      = link_to "Edit", "#", class: "main-header-edit-button__text"
+  .messages
+    .message
+      .message__upper-info
+        .message__upper-info__user-name
+          masa
+        .message__upper-info__time-stamp
+          2020/06/13(Sat) 22:42:21
+      .message__text
+        test
+  .form
+    .form-message
+      .form-message-input-box
+        %input.form-message-input-box__text-area{placeholder: "type a message"}
+        %label{class: "form-message-input-box__icon"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "form-message-input-box__icon__hidden"}
+      .form-message-send-button
+        %input.form-message-send-button__text{type: "submit", value: "Send"}
