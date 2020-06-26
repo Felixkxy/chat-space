@@ -2,11 +2,13 @@
   .main-header
     .main-header-left-box
       .main-header-left-box__group-name
-        test
+        = @group.name
       .main-header-left-box__member-list
-        Member: masa
+        Member:
+        - @group.users.each do |user|
+          = user.name
     .main-header-edit-button
-      = link_to "Edit", "#", class: "main-header-edit-button__text"
+      = link_to "Edit", edit_group_path(@group), class: "main-header-edit-button__text"
   .messages
     = render @messages
   .form
